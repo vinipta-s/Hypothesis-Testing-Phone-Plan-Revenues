@@ -18,4 +18,5 @@ Summary of Project by sections:
 3. Monthly revenue was calculated for each user per month and the services that exceeded the limit of their plans. 
 4. Looked at user behaviors by ploting their monthy usage and revenue distribution.
 5. Statistical test hypothesis: the equal_var parameter set to False to account for any variance as a result of the imbalance data size. Used bootstrap mean confidence intervals for determining which plan produces a higher monthly revenue.
-6. <b>Final Report: </b>
+6. <b>Final Report:</b> The t-test resulted in a <b>p-value of 3.17e-15</b>, significantly lower than the critical value, indicating a statistically significant difference in average revenue between the Surf and Ultimate plans. <b>Bootstrap confidence intervals<b> show the Surf plan's revenue is between 58.03 and 63.49 dollars, while the Ultimate plan's is between 71.55 and 73.17 dollars. Since the <b>intervals don't overlap</b>, the <b>Ultimate plan generates significantly higher revenue than the Surf plan</b>.
+
