@@ -10,7 +10,12 @@ The data for 2018:
 * megaline_internet.csv — mb used for each session
 * megaline_messages.csv — messages sent
 
+**Goal: Determine which plan brings in more monthly revenue and look into the behavior of the clients for messages, calls and internet use.**
+
 Summary of Project by sections:
 1. Initialize Libraries
-2. Load and clean datasets. Merge aggregated user data per month
-3. 
+2. Datasets were loaded and sampled, and checked for missing values and duplicates. Data was cleaned and a new dataset consisting of the sum of services per user per month was created and merged with other datasets on user_id.
+3. Monthly revenue was calculated for each user per month and the services that exceeded the limit of their plans. 
+4. Looked at user behaviors by ploting their monthy usage and revenue distribution.
+5. Statistical test hypothesis: the equal_var parameter set to False to account for any variance as a result of the imbalance data size. Used bootstrap mean confidence intervals for determining which plan produces a higher monthly revenue.
+6. <b>Final Report: </b>
